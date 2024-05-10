@@ -27,7 +27,7 @@ PCAP per analisi de tràfic i malware - <https://www.malware-traffic-analysis.ne
 Anàlisi de tràfic amb Wireshark (INCIBE=Institut de Ciberseguretat d’Espanya):
 <https://www.incibe.es/extfrontinteco/img/File/intecocert/EstudiosInformes/cert_inf_seguridad_analisis_trafico_wireshark.pdf>
 
-Saber fabricant de la targeta amb identificador MAC - <https://maclookup.app/macaddress/8CBEBE>
+Determinar el fabricant de la targeta a partir de l'identificador MAC - <https://maclookup.app/macaddress/8CBEBE>
 
 ## Objectius
 
@@ -36,23 +36,22 @@ L'objectiu d'aquesta activitat és treballar amb Wireshark, un sniffer o analitz
 ## Introducció (teoria)
 
 L'eina que farem servir és Wireshark, que ja tenim instal·lat al Kali Linux.
-El protocol ICMP (Internet Control Message Protocol) permet als dispositius de xarxa informar d'una errada. Per exemple, si un router no pot encaminar un paquet, el descarta i torna un error ICMP a l'emissor, o si un paquet acaba el seu TTL (Time To Live), el router el descarta i envia un missatge ICMP a l'emissor.
+El protocol 'ICMP`(Internet Control Message Protocol) permet als dispositius de xarxa informar d'una errada. Per exemple, si un router no pot encaminar un paquet, el descarta i torna un error ICMP a l'emissor, o si un paquet acaba el seu TTL (Time To Live), el router el descarta i envia un missatge ICMP a l'emissor.
 
 Ping és un dels serveis que ofereix ICMP. Serveix per comprovar si es pot accedir a un equip a la xarxa. També ens diu el temps que es triga en obtenir resposta.
 Traceroute ens diu per quins routers passen els paquets fins arribar al host destí.
-El protocol ARP (Address Resolution Protocol) permet, a partir d'una adreça IP, aconseguir l'adreça MAC corresponent. Això es fa preguntant en Broadcast a la xarxa qui té una determinada IP. En teoria, només contestarà un host.
 
-El protocol DNS (Domain Name Service) permet traduir un nom de domini com ara `www.google.es` a una adreça IP. Podem veure aquesta traducció fent servir la comanda "nslookup `www.google.es`. També es pot obtenir a partir d'una adreça IP el nom de domini, tot i que no sempre funciona.
+El protocol `ARP`(Address Resolution Protocol) permet, a partir d'una adreça IP, aconseguir l'adreça MAC corresponent. Això es fa preguntant en Broadcast a la xarxa qui té una determinada IP. En teoria, només contestarà un host.
 
-El protocol FTP (File Transfer Protocol) permet transferir o enviar fitxers entre hosts.
+El protocol `DNS`(Domain Name Service) permet traduir un nom de domini com ara `www.google.es` a una adreça IP. Podem veure aquesta traducció fent servir la comanda "nslookup `www.google.es`. També es pot obtenir a partir d'una adreça IP el nom de domini, tot i que no sempre funciona.
 
-Un servidor FTP obre el port 21 (port ftp) per a poder "conversar" amb ell (enviar ordres i rebre respostes).
+El protocol `FTP` (File Transfer Protocol) permet transferir o enviar fitxers entre hosts. Un servidor FTP obre el port 21 (port ftp) per a poder "conversar" amb ell (enviar ordres i rebre respostes).
 
-Si es demanen dades, per exemple baixar un fitxer, s'obre una nova connexió entre servidor i client.
-En mode actiu, el client obre un port i indica al servidor que es connecti a aquest port. Però això implicaria al firewall obrir molts ports i no es permet normalment.
+Si es demanen dades, per exemple baixar un fitxer, s'obre una nova connexió entre servidor i client. En mode actiu, el client obre un port i indica al servidor que es connecti a aquest port. Però això implicaria al firewall obrir molts ports i no es permet normalment.
+
 En mode passiu és el servidor qui obre un port per a les dades, indica al client quin és i llavors el client obre connexió nova per baixar-se les dades, que normalment és el contingut del directori o si s'ha fet un "get", és el fitxer demanat.
 
-El protocol HTTP/HTTPS (Hypertext Transfer Protocol) és el protocol que permet visitar pàgines web.
+El protocol `HTTP/HTTPS`(Hypertext Transfer Protocol) és el protocol que permet visitar pàgines web.
 
 ## Filtres
 
@@ -93,13 +92,13 @@ Kali ja té instal·lat Wireshark. Si esteu utilitzant un Ubuntu Desktop, instal
 
 Posa en marxa la captura de paquets de Wireshark sobre la targeta de xarxa del teu Kali amb adaptador NAT.
 
-Obre una consola i executa un ping a algun host de la xarxa de l'aula: 172.0.2.x. Pots fer nmap per a veure quines màquines estan online. Deixa que faci quatre o cinc peticions i atura la comanda. NOTA: No facis un ping a la teva pròpia màquina perquè els paquets realment no surten de la teva màquina i el Wireshark no els pot capturar.
+Obre una consola i executa un ping a algun servei o al router de l'escola. Deixa que faci quatre o cinc peticions i atura la comanda (el ping per defecte a Linux no para d'enviar paquets). NOTA: No facis un ping a la teva pròpia màquina perquè els paquets realment no surten de la teva màquina i el Wireshark no els pot capturar.
 
 Atura la captura de paquets. Veuràs que s'ha capturat un munt de paquets, sense discriminar, però només volem veure els que fan referència al ping que hem fet.
 
 Per fer-ho, apliquem un filtre de visualització, que permet triar el que volem veure de tot el que s'ha capturat.
 
-Dintre aquest protocol trobem els tipus "echo request/reply", que són els que fa servir la comanda ping. Escriurem la paraula `icmp` a "Filter:".
+Dintre aquest protocol trobem els tipus `echo request/reply`, que són els que fa servir la comanda ping. Escriurem la paraula `icmp` a "Filter:".
 
 Quin número de tipus de ICMP té la petició d'eco i quin la resposta d'eco? Com ho veus?
 
@@ -133,7 +132,7 @@ Aconsegueix trobar la següent informació:
 
 Al protocol ARP: Pots saber quina adreça MAC té l'equip amb adreça 192.168.1.1? Fes un filtre per a veure només els paquets d'aquesta adreça del protocol ARP.
 
-A la sessió ftp: 
+A la sessió ftp:
 
 - Quin és el password de l'usuari que inicia sessió? Quin nom té el fitxer que es descarrega del servidor?
 

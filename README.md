@@ -8,26 +8,26 @@ En general, heu de comprovar SEMPRE que els canvis de configuració que feu prod
 
 ## Referències i ajuda
 
-Configurar Wireshark: https://www.wireshark.org/docs/wsug_html/
+Configurar Wireshark: <https://www.wireshark.org/docs/wsug_html/>
 
 Manuals de Wireshark:
 
-- https://www.wireshark.org/#learnWS
-- https://www.wireshark.org/docs/wsug_html/
-- https://wiki.wireshark.org/FrontPage
+- <https://www.wireshark.org/#learnWS>
+- <https://www.wireshark.org/docs/wsug_html/>
+- <https://wiki.wireshark.org/FrontPage>
 
-Exportar fitxers d'un PCAP amb Wireshark - https://unit42.paloaltonetworks.com/using-wireshark-exporting-objects-from-a-pcap/
+Exportar fitxers d'un PCAP amb Wireshark - <https://unit42.paloaltonetworks.com/using-wireshark-exporting-objects-from-a-pcap/>
 
-Display filters - https://unit42.paloaltonetworks.com/using-wireshark-display-filter-expressions/
+Display filters - <https://unit42.paloaltonetworks.com/using-wireshark-display-filter-expressions/>
 
-Identificar hosts i usuaris - https://unit42.paloaltonetworks.com/using-wireshark-identifying-hosts-and-users/
+Identificar hosts i usuaris - <https://unit42.paloaltonetworks.com/using-wireshark-identifying-hosts-and-users/>
 
-PCAP per analisi de tràfic i malware - https://www.malware-traffic-analysis.net/index.html
+PCAP per analisi de tràfic i malware - <https://www.malware-traffic-analysis.net/index.html>
 
 Anàlisi de tràfic amb Wireshark (INCIBE=Institut de Ciberseguretat d’Espanya):
-https://www.incibe.es/extfrontinteco/img/File/intecocert/EstudiosInformes/cert_inf_seguridad_analisis_trafico_wireshark.pdf
+<https://www.incibe.es/extfrontinteco/img/File/intecocert/EstudiosInformes/cert_inf_seguridad_analisis_trafico_wireshark.pdf>
 
-Saber fabricant de la targeta amb identificador MAC - https://maclookup.app/macaddress/8CBEBE
+Saber fabricant de la targeta amb identificador MAC - <https://maclookup.app/macaddress/8CBEBE>
 
 ## Objectius
 
@@ -42,7 +42,7 @@ Ping és un dels serveis que ofereix ICMP. Serveix per comprovar si es pot acced
 Traceroute ens diu per quins routers passen els paquets fins arribar al host destí.
 El protocol ARP (Address Resolution Protocol) permet, a partir d'una adreça IP, aconseguir l'adreça MAC corresponent. Això es fa preguntant en Broadcast a la xarxa qui té una determinada IP. En teoria, només contestarà un host.
 
-El protocol DNS (Domain Name Service) permet traduir un nom de domini com ara www.google.es a una adreça IP. Podem veure aquesta traducció fent servir la comanda "nslookup www.google.es". També es pot obtenir a partir d'una adreça IP el nom de domini, tot i que no sempre funciona.
+El protocol DNS (Domain Name Service) permet traduir un nom de domini com ara <www.google.es> a una adreça IP. Podem veure aquesta traducció fent servir la comanda "nslookup <www.google.es>". També es pot obtenir a partir d'una adreça IP el nom de domini, tot i que no sempre funciona.
 
 El protocol FTP (File Transfer Protocol) permet transferir o enviar fitxers entre hosts.
 

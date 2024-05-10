@@ -133,7 +133,9 @@ Aconsegueix trobar la següent informació:
 
 Al protocol ARP: Pots saber quina adreça MAC té l'equip amb adreça 192.168.1.1? Fes un filtre per a veure només els paquets d'aquesta adreça del protocol ARP.
 
-A la sessió ftp: Quin és el password de l'usuari que inicia sessió? Quin nom té el fitxer que es descarrega del servidor?
+A la sessió ftp: 
+
+- Quin és el password de l'usuari que inicia sessió? Quin nom té el fitxer que es descarrega del servidor?
 
 A la sessió de Telnet:
 
@@ -147,8 +149,8 @@ A la sessió ssh:
 
 Trànsit FTP:
 
-Quin és el contingut del fitxer (a partir de la captura extra "captura1.pcapng") que s’ha baixat per FTP? Extreu el fitxer des de Wireshark?
+- Quin és el contingut del fitxer (a partir de la captura extra "captura1.pcapng") que s’ha baixat per FTP? Extreu el fitxer des de Wireshark?
 
-Amb la captura "captura2.pcapng" que s’afegeix, troba el missatge que s’ha enviat amb el protocol de correu sortint. Extreu el fitxer.
+A l'arxiu "captura2.pcapng" que també teniu al moodle, troba el missatge que s’ha enviat amb el protocol de correu sortint. Extreu el fitxer.
 
 Pràctica realitzada a partir de material d'en Pau Tomé de l'IES Carles Vallbona (Granollers).

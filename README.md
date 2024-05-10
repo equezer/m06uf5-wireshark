@@ -42,7 +42,7 @@ Ping és un dels serveis que ofereix ICMP. Serveix per comprovar si es pot acced
 Traceroute ens diu per quins routers passen els paquets fins arribar al host destí.
 El protocol ARP (Address Resolution Protocol) permet, a partir d'una adreça IP, aconseguir l'adreça MAC corresponent. Això es fa preguntant en Broadcast a la xarxa qui té una determinada IP. En teoria, només contestarà un host.
 
-El protocol DNS (Domain Name Service) permet traduir un nom de domini com ara <www.google.es> a una adreça IP. Podem veure aquesta traducció fent servir la comanda "nslookup <www.google.es>". També es pot obtenir a partir d'una adreça IP el nom de domini, tot i que no sempre funciona.
+El protocol DNS (Domain Name Service) permet traduir un nom de domini com ara `www.google.es` a una adreça IP. Podem veure aquesta traducció fent servir la comanda "nslookup `www.google.es`. També es pot obtenir a partir d'una adreça IP el nom de domini, tot i que no sempre funciona.
 
 El protocol FTP (File Transfer Protocol) permet transferir o enviar fitxers entre hosts.
 
@@ -105,7 +105,7 @@ Quin número de tipus de ICMP té la petició d'eco i quin la resposta d'eco? Co
 
 Feu el mateix amb un `traceroute www.xtec.cat`  i un `traceroute www.google.es`.
 
-Quin número de tipus de ICMP i nom tenen els paquets que envien els routers al nostre host?
+Quin número de tipus de ICMP i nom tenen els paquets que envien els routers al nostre host? Compte que estem parlant dels paquets de resposta.
 
 Posa l'adaptador de xarxa en `adaptador pont`, A les opcions avançades de la targeta activa el mode `promiscu` amb l'opció `Permetre-ho tot`.
 

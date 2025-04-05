@@ -86,7 +86,7 @@ NOTA: Quan especifiquem un valor a excloure, no s'ha de fer servir "!=". En el s
 
 ### Anàlisi en viu
 
-#### ICMP, ping, traceroute
+#### ICMP
 
 Kali ja té instal·lat Wireshark. Si esteu utilitzant un Ubuntu Desktop, instal·la i configura Wireshark.
 
@@ -102,15 +102,11 @@ Dintre aquest protocol trobem els tipus `echo request/reply`, que són els que f
 
 Quin número de tipus de ICMP té la petició d'eco i quin la resposta d'eco? Com ho veus?
 
-Feu el mateix amb un `traceroute www.xtec.cat`  i un `traceroute www.google.es`.
-
-Quin número de tipus de ICMP i nom tenen els paquets que envien els routers al nostre host? Compte que estem parlant dels paquets de resposta.
-
-Posa l'adaptador de xarxa en `adaptador pont`, A les opcions avançades de la targeta activa el mode `promiscu` amb l'opció `Permetre-ho tot`.
+Posa l'adaptador de xarxa en `Només amfitrió`, A les opcions avançades de la targeta activa el mode `promiscu` amb l'opció `Permetre-ho tot`.
 
 ![promiscous_mode](pics/promiscous.png)
 
-**No cal que configuris l'adreça al Kali** perquè únicament volem captura el trànsit de la màquina física. Fes una captura de trànsit, mentre navegues des de la màquina física. Quin trànsit pots veure relacionat amb el teu PC?
+**No cal que configuris l'adreça al Kali** . Fes una captura de trànsit, mentre navegues des de la màquina física. Quin trànsit pots veure relacionat amb el teu PC?
 
 #### DNS
 
@@ -132,7 +128,7 @@ Aconsegueix trobar la següent informació:
 
 Al protocol ARP: Pots saber quina adreça MAC té l'equip amb adreça 192.168.1.1? Fes un filtre per a veure només els paquets d'aquesta adreça del protocol ARP.
 
-A la sessió ftp:
+A la sessió FTP:
 
 - Quin és el password de l'usuari que inicia sessió? Quin nom té el fitxer que es descarrega del servidor?
 
@@ -141,14 +137,10 @@ A la sessió de Telnet:
 - Pots veure el que veia l'usuari en connectar al telnet? Explica què és. Quins caràcters composen la nau espacial petita (posar com a resposta)?
 - A quin domini pertany l'adreça on ens connectem?
 
-A la sessió ssh:
+A la sessió SSH:
 
 - Pots saber a quin domini pertany l'adreça del servidor?
 - Pots veure el contingut de les dades de la sessió? Enganxa les dades que conté el paquet ssh de longitud total 326 bytes.
-
-Trànsit FTP:
-
-- Quin és el contingut del fitxer (a partir de la captura extra "captura1.pcapng") que s’ha baixat per FTP? Extreu el fitxer des de Wireshark?
 
 A l'arxiu "captura2.pcapng" que també teniu al moodle, troba el missatge que s’ha enviat amb el protocol de correu sortint. Extreu el fitxer.
 

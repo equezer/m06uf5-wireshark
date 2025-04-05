@@ -102,7 +102,7 @@ Dintre aquest protocol trobem els tipus `echo request/reply`, que són els que f
 
 Quin número de tipus de ICMP té la petició d'eco i quin la resposta d'eco? Com ho veus?
 
-Posa l'adaptador de xarxa en `Només amfitrió`, A les opcions avançades de la targeta activa el mode `promiscu` amb l'opció `Permetre-ho tot`.
+Posa l'adaptador de xarxa en `Adpatador pont`, A les opcions avançades de la targeta activa el mode `promiscu` amb l'opció `Permetre-ho tot`.
 
 ![promiscous_mode](pics/promiscous.png)
 

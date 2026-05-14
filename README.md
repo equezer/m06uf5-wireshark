@@ -8,6 +8,8 @@ En general, heu de comprovar SEMPRE que els canvis de configuració que feu prod
 
 ## Referències i ajuda
 
+Wireshark és una eina molt potent i amb moltes opcions, aquí teniu un recopilatori de recursos.
+
 Configurar Wireshark: <https://www.wireshark.org/docs/wsug_html/>
 
 Manuals de Wireshark:
@@ -126,7 +128,7 @@ Quina adreça MAC té el gateway de la xarxa? Quin és el fabricant de la seva N
 
 ### Anàlisi de captura. Arxius
 
-Carrega la captura "captura1.pcapng" que teniu a la tasca del Moodle.
+Carrega la captura "captura1.pcapng" que teniu a la carpeta `files` d'aquest repositori.
 
 Aconsegueix trobar la següent informació:
 
@@ -148,8 +150,12 @@ Aconsegueix trobar la següent informació:
 
 5. Correu electrònic:
 
-Ara carrega l'arxiu "captura2.pcapng" que també teniu al Moodle, troba el missatge que s’ha enviat amb el protocol de correu sortint. Extreu el fitxer.
+Ara carrega l'arxiu "captura2.pcapng" que també teniu al repositori, troba el missatge que s’ha enviat amb el protocol de correu sortint. Extreu el fitxer.
 
 ## Autoria i llicenciament
 
-Pràctica realitzada a partir de material d'en Pau Tomé de l'IES Carles Vallbona (Granollers) que està llicenciat ambé sota una llicència Creative Commons Reconeixement-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0).
+Autoria: Carlos Alonso Martínez
+
+Aquesta pràctica ha estat realitzada a partir de material d'en Pau Tomé de l'IES Carles Vallbona (Granollers) que està llicenciat ambé sota una llicència Creative Commons Reconeixement-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0).
+
+Llicència: Creative Commons Reconeixement-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)

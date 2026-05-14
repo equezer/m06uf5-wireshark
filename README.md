@@ -132,9 +132,9 @@ Carrega la captura "captura1.pcapng" que teniu a la carpeta `files` d'aquest rep
 
 Aconsegueix trobar la següent informació:
 
-1. Al protocol ARP: Pots saber quina adreça MAC té l'equip amb adreça 192.168.1.1? Fes un filtre per a veure només els paquets d'aquesta adreça del protocol ARP.
+1.Al protocol ARP: Pots saber quina adreça MAC té l'equip amb adreça 192.168.1.1? Fes un filtre per a veure només els paquets d'aquesta adreça del protocol ARP.
 
-2. A la sessió FTP:
+2.A la sessió FTP:
 
 - Quin és el password de l'usuari que inicia sessió? Quin nom té el fitxer que es descarrega del servidor?
 

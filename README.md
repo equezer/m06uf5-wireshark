@@ -148,7 +148,7 @@ Aconsegueix trobar la següent informació:
 - Pots saber a quin domini pertany l'adreça del servidor?
 - Pots veure el contingut de les dades de la sessió? Enganxa les dades que conté el paquet ssh de longitud total 326 bytes.
 
-5. Correu electrònic:
+5.Correu electrònic:
 
 Ara carrega l'arxiu "captura2.pcapng" que també teniu al repositori, troba el missatge que s’ha enviat amb el protocol de correu sortint. Extreu el fitxer.
 

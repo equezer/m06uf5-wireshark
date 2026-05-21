@@ -159,3 +159,8 @@ Autoria: Carlos Alonso Martínez
 Aquesta pràctica ha estat realitzada a partir de material d'en Pau Tomé de l'IES Carles Vallbona (Granollers) que està llicenciat ambé sota una llicència Creative Commons Reconeixement-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0).
 
 Llicència: Creative Commons Reconeixement-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)
+
+a l'arxiu: [solucio.md](solucio.md) trobaras la solució a la tasca
+
+[torna a la pàgina principal](../README.md)
+

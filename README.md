@@ -2,7 +2,7 @@
 
 ATENCIÓ: Els noms dels equips hosts al VirtualBox, el nom del sistema quan instal·leu, els noms de l'usuari, equip, etc. han de ser el vostre perquè a les captures es pugui veure.
 
-Teniu l'exercici a fer al final d'aquest enunciat. Llegiu primer tot el document abans de començar la pràctica.
+Teniu l'exercici a fer al final d'aquest enunciat. Llegiu primer tot el document abans de començar la pràctica. sds
 
 En general, heu de comprovar SEMPRE que els canvis de configuració que feu produeixen l'efecte desitjat amb el conjunt de proves necessari.
 
